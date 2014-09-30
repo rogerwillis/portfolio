@@ -1,10 +1,10 @@
 $(document).ready(function () {
 
-
+    //If feature div is greater than 20px from top decrease the size of the header
     $(window).scroll(function () {
-        var posTop = $(window).scrollTop() - $('.feature').offset().top;
-        console.log(posTop);
-        if (posTop > 20) {
+        var positionFromTop = $(window).scrollTop() - $('.feature').offset().top;
+
+        if (positionFromTop > 20) {
             $(".logo img").css({ height: '30px' });
             $("header").css({ padding: '10px' });
             $("nav").css({ padding: '0' });
@@ -14,59 +14,56 @@ $(document).ready(function () {
             $("header").css({ padding: '' });
             $("nav").css({ padding: '' });
             $("nav ul li a").css({ padding: '' });
-
         }
     });
+   // var portfolio = [{
 
-    
-
-    var portfolio = [{
-        "id": "1",
-        "img": "http://placehold.it/400x200",
-        "name": "Hot or Cold App",
-        "url": "http://rogerwillis.github.io/hot-or-cold/index.html"
-    },
-   {
-       "id": "2",
-       "img": "http://placehold.it/400x200",
-       "name": "Google Clone App",
-       "url": "http://rogerwillis.github.io/google-clone/"
-   },
-    {
-        "id": "3",
-        "img": "http://placehold.it/400x200",
-        "name": "Street Fighter App",
-        "url": "http://rogerwillis.github.io/jquery-streetfighter/main.html"
-    }, {
-        "id": "4",
-        "img": "http://placehold.it/400x200",
-        "name": "Shopping Application",
-        "url": "http://rogerwillis.github.io/shopping-app/index.html"
-    },
-   {
-       "id": "5",
-       "img": "http://placehold.it/400x200",
-       "name": "Fizz Buzz",
-       "url": "http://rogerwillis.github.io/fizzbuzz-refactor/"
-   },
-    {
-        "id": "6",
-        "img": "http://placehold.it/400x200",
-        "name": "Quiz App",
-        "url": "http://rogerwillis.github.io/Quiz-App/index.html"
-    },
-    {
-        "id": "7",
-        "img": "http://placehold.it/400x200",
-        "name": "Stackoverflow Rep Builder",
-        "url": "http://rogerwillis.github.io/stackoverflow-rep-builder/"
-    },
-    {
-        "id": "8",
-        "img": "http://placehold.it/400x200",
-        "name": "API Hack",
-        "url": "http://rogerwillis.github.io/APIHack/index.html"
-    }];
+   //     "id": "1",
+   //     "img": "http://placehold.it/400x200",
+   //     "name": "Hot or Cold App",
+   //     "url": "http://rogerwillis.github.io/hot-or-cold/index.html"
+   // },
+   //{
+   //    "id": "2",
+   //    "img": "http://placehold.it/400x200",
+   //    "name": "Google Clone App",
+   //    "url": "http://rogerwillis.github.io/google-clone/"
+   //},
+   // {
+   //     "id": "3",
+   //     "img": "http://placehold.it/400x200",
+   //     "name": "Street Fighter App",
+   //     "url": "http://rogerwillis.github.io/jquery-streetfighter/main.html"
+   // }, {
+   //     "id": "4",
+   //     "img": "http://placehold.it/400x200",
+   //     "name": "Shopping Application",
+   //     "url": "http://rogerwillis.github.io/shopping-app/index.html"
+   // },
+   //{
+   //    "id": "5",
+   //    "img": "http://placehold.it/400x200",
+   //    "name": "Fizz Buzz",
+   //    "url": "http://rogerwillis.github.io/fizzbuzz-refactor/"
+   //},
+   // {
+   //     "id": "6",
+   //     "img": "http://placehold.it/400x200",
+   //     "name": "Quiz App",
+   //     "url": "http://rogerwillis.github.io/Quiz-App/index.html"
+   // },
+   // {
+   //     "id": "7",
+   //     "img": "http://placehold.it/400x200",
+   //     "name": "Stackoverflow Rep Builder",
+   //     "url": "http://rogerwillis.github.io/stackoverflow-rep-builder/"
+   // },
+   // {
+   //     "id": "8",
+   //     "img": "http://placehold.it/400x200",
+   //     "name": "API Hack",
+   //     "url": "http://rogerwillis.github.io/APIHack/index.html"
+   // }];
 
 
 
